@@ -1,0 +1,818 @@
+@font-face {
+    font-family: "Colos";
+    src: url(../fonts/Golos-Text_Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Colos";
+    src: url(../fonts/Golos-Text_Regular.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Colos";
+    src: url(../fonts/Golos-Text_DemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Colos', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+body{
+    background-color: #141414;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.livetv, .account{
+    display: flex;
+}
+.account a{
+    margin-top: 36px;
+    color: #f0f0f0;
+    font-size: 14px;
+    transition: 1s;
+}
+.livetv a{
+    margin-top: 36px;
+    color: #f0f0f0;
+    padding-left: 24px;
+    font-size: 14px;
+}
+.account img{
+    margin-top: 30px;
+    padding-left: 24px;
+    padding-right: 9px;
+}
+.livetv img{
+    margin-top: 30px;
+}
+
+.neznacomec{
+    background-image: url(../img/1.jpg);
+    border-radius: 10px;
+    margin-top: 40px;
+    height: 600px;
+}
+.neznacomec h1{
+    margin-left: 70px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #f0f0f0;
+    padding-top: 200px;
+}
+.neznacomec .ocenka{
+    margin-left: 70px;
+    display: flex;
+    color: #f0f0f0;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    align-items: center;
+}
+.neznacomec .ocenka h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+.neznacomec .ocenka p{
+    font-size: 14px;
+    color: #f0f0f07c;
+    padding-left: 14px;
+}
+.neznacomec .ocenka img{
+    padding-left: 14px;
+}
+.neznacomec .sofi{
+    margin-left: 70px;
+    color: #dedede;
+    font-size: 16px;
+    width: 33%;
+}
+.neznacomec .knopki{
+    margin-left: 70px;
+}
+.neznacomec .knopki button{
+    margin-top: 45px;
+    margin-right: 15px;
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    padding: 18px 19px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f0f0f0;
+    transition: 1s;
+}
+.neznacomec .knopki button:hover{
+    box-shadow: #ffffffd3 0 0 20px;
+    transition: .5s;
+}
+.neznacomec .knopki .treler{
+    background: linear-gradient(to right, #0051d42d, #4364f728, #6fb1fc2d);
+}
+
+.recomendyem h1{
+    margin-top: 105px;
+    margin-bottom: 21px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #f0f0f0;
+}
+.recomendyem h2{
+    font-size: 16px;
+    font-weight: 600;
+    color: #f0f0f0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.recomendyem p{
+    font-size: 14px;
+    padding-top: 2px;
+    color: #f0f0f07c;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.recomendyem img{
+    border-radius: 10px;
+}
+.recomendyem .film{
+    display: flex;
+    justify-content: space-between;
+}
+.recomendyem .karta{
+    transition: 1s;
+    border-radius: 10px;
+}
+.recomendyem .karta:hover{
+    box-shadow: #ffffffd3 0 0 20px;
+    transition: .5s;
+}
+
+.kosmos{
+    background-image: url(../img/6.jpg);
+    margin-top: 105px;
+    height: 500px;
+    border-radius: 10px;
+}
+.kosmos h1{
+    margin-left: 70px;
+    font-size: 55px;
+    font-weight: 900;
+    color: #f0f0f0;
+    padding-top: 90px;
+}
+.kosmos p{
+    margin-left: 70px;
+    color: #dedede;
+    font-size: 16px;
+    width: 34%;
+    margin-top: 20px;
+}
+.kosmos button{
+    margin-top: 45px;
+    margin-right: 15px;
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f0f0f0;
+    transition: 1s;
+    margin-left: 70px;
+}
+.kosmos button:hover{
+    box-shadow: #ffffffd3 0 0 20px;
+    transition: .5s;
+}
+
+.besonoca h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: #f0f0f0;
+    margin-top: 20px;
+}
+.besonoca .ocenka{
+    display: flex;
+    color: #f0f0f0;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    align-items: center;
+}
+.besonoca .ocenka h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+.besonoca .ocenka p{
+    font-size: 14px;
+    color: #f0f0f07c;
+    padding-left: 14px;
+}
+.besonoca .ocenka img{
+    padding-left: 14px;
+}
+.besonoca .sofi{
+    color: #dedede;
+    font-size: 16px;
+}
+.besonoca .knopki button{
+    margin-top: 26px;
+    margin-right: 15px;
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    padding: 18px 19px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f0f0f0;
+    transition: 1s;
+}
+.besonoca .knopki button:hover{
+    box-shadow: #ffffffd3 0 0 20px;
+    transition: .5s;
+}
+.besonoca .knopki .treler{
+    background: linear-gradient(to right, #0051d42d, #4364f728, #6fb1fc2d);
+}
+.besonoca .n{
+    font-size: 12px;
+    margin-top: 100px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff512f, #f09819);
+    width: 34.8%;
+    color: #f0f0f0;
+    font-weight: 900;
+    border-radius: 20px;
+}
+.besonoca .bes{
+    display: flex;
+    justify-content: space-between;
+}
+.besonoca .bes .img{
+    margin-top: 100px;
+    padding-left: 30px;
+}
+.besonoca .bes .img img{
+    border-radius: 10px;
+}
+.besonoca .prise{
+    font-size: 40px;
+    font-weight: 900;
+    color: #f0f0f0;
+    margin-top: 25px;
+}
+
+
+.besonoca .opisanie .perecluch .text{
+    font-size: 16px;
+    margin-top: 20px;
+    display: flex;
+}
+.besonoca .opisanie #input1:checked ~ .perecluch .text1, 
+#input2:checked ~ .perecluch .text2, #input3:checked ~ .perecluch .text3{
+    display: block;
+}
+.besonoca .opisanie #input1:checked ~ #label1,
+#input2:checked ~ #label2, #input3:checked ~ #label3{
+    color: #f0f0f0;
+    text-decoration: underline 2px;
+    text-decoration-color: #6fb1fc;
+    /* Смещаем подчёркивание на 20 пикселей вниз */
+    text-underline-offset: 10px;
+}
+.besonoca .opisanie input{
+    display: none;
+}
+.besonoca .opisanie .perecluch{
+    width: 100%;
+    overflow: hidden;
+}
+.besonoca .opisanie .perecluch .line_carousel{
+    width: 300%;
+    display: flex;
+}
+.besonoca .opisanie .perecluch .text{
+    width: calc(100%/3);
+    /*animation: carousel 10s ease-in-out alternate infinite;*/
+    transition: 1s;
+}
+
+.besonoca .opisanie #input1:checked ~ .perecluch .text{
+    transition: 1s;
+    transform: translateX(0);
+}
+.besonoca .opisanie #input2:checked ~ .perecluch .text{
+    transition: 1s;
+    transform: translateX(-100%);
+}
+.besonoca .opisanie #input3:checked ~ .perecluch .text{
+    transition: 1s;
+    transform: translateX(-200%);
+}
+@keyframes carousel{
+    0%, 20%{
+        transform: translateX(0);
+    }
+    30%, 70%{
+        transform: translateX(-100%);
+    }
+    80%, 100%{
+        transform: translateX(-200%);
+    }
+}
+
+
+.besonoca .opisanie label{
+    font-size: 14px;
+    color: #616161;
+    font-weight: 900;
+    margin-right: 20px;
+    transition: 1s;
+}
+.besonoca .opisanie{
+    margin-top: 40px;
+}
+
+.besonoca .opisanie .text_tyrms{
+    font-size: 16px;
+    color: #dedede;
+}
+.besonoca .opis{
+    display: flex;
+    justify-content: space-between;
+}
+.besonoca .opis .imgas{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-flow: column dense;
+    padding-left: 30px;
+    margin-bottom: 100px;
+}
+.besonoca .opis img{
+    border-radius: 10px;
+}
+.besonoca .opis .text img{
+    width: 50%;
+}
+
+
+
+.tv{
+    background-color: #1f1f1f;
+}
+.tv_tv{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.tv_tv h1{
+    font-size: 30px;
+    margin-top: 100px;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+.tv_tv img{
+    margin-top: 100px;
+    margin-right: 99px;
+}
+.tv_tv p{
+    font-size: 16px;
+    color: #dedede;
+}
+.tv_tv h2, h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+}
+.tv_tv .ststistica{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.tv_tv h2{
+    margin-top: 40px;
+}
+.tv_tv h3{
+    margin-top: 20px;
+}
+
+
+.podpiska h1{
+    font-size: 50px;
+    color: #f0f0f0;
+    margin-top: 100px;
+}
+.podpiska p{
+    font-size: 16px;
+    color: #dedede;
+}
+.podpiska .text{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.podpiska .anketa .base{
+    width: 100%;
+    border: 1px solid  #66696d;
+    color:  #b5bac0;
+    font-weight: 600;
+    background-color: #141414;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.podpiska .anketa .nobase{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-right: 8px;
+}
+.podpiska .anketa .labelbase{
+    margin-right:5px;
+}
+.podpiska .anketa button{
+    margin-top: 26px;
+    margin-right: 15px;
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    padding: 18px 19px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f0f0f0;
+    transition: 1s;
+
+}
+.podpiska .anketa button:hover{
+    box-shadow: #ffffffd3 0 0 20px;
+    transition: .5s;
+}
+.podpiska label{
+    font-size: 16px;
+    color: #f0f0f0;
+}
+
+
+.podpiska .forma{
+    display: flex;
+    justify-content: space-between;
+}
+.podpiska .mesac{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    grid-auto-flow: column dense;
+    height: 100%;
+}
+.podpiska h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.podpiska .ceni{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 90px;
+    background: linear-gradient(to right, #0051d42d, #4364f72d, #6fb1fc2a);
+    border-radius: 10px;
+}
+
+.podpiska{
+    margin-bottom: 100px;
+}
+
+.footer{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-around;
+}
+.footer p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    color: #dedede;
+}
+.footer .p{
+    text-decoration: underline;
+}
+.footer .img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.footer img{
+    margin-left: 20px;
+}
+
+
+
+
+@media  (max-width: 1570px){
+    .container{
+        width: 1170px !important;
+    }
+}
+
+
+@media  (max-width: 1024px){
+    .container{
+        width: 98% !important;
+    }
+    .podpiska .text{
+        width: 100%;
+    }
+    .tv_tv img{
+        margin-right: 0;
+        width: 99%;
+    }
+    .tv_tv{
+        flex-direction: column;
+        width: 99%;
+        margin-left: 0;
+    }
+    .tv_tv .ststistica{
+        justify-content: space-around;
+    }
+    .besonoca .bes .img img{
+        width: 500px;
+    }
+    .recomendyem .film{
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+}
+
+
+@media  (max-width: 780px){
+    .container{
+        width: 98% !important;
+    }
+    .podpiska .text{
+        width: 100%;
+    }
+    .podpiska .mesac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tv_tv img{
+        margin-right: 0;
+        width: 99%;
+    }
+    .tv_tv{
+        flex-direction: column;
+        width: 99%;
+        margin-left: 0;
+    }
+    .besonoca .opis .imgas{
+        padding-left: 0;
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .besonoca .bes{
+        flex-direction: column;
+    }
+    .besonoca .bes .img{
+        padding-left: 0;
+    }
+    .besonoca .bes .img img{
+        width: 100%;
+    }
+    .recomendyem .film{
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    .neznacomec .sofi{
+        width: 90%;
+    }
+    .logo{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media  (max-width: 540px){
+    .container{
+        width: 98% !important;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .podpiska .forma{
+        flex-direction: column;
+    }
+    .podpiska .text{
+        width: 100%;
+    }
+    .podpiska .mesac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .tv_tv img{
+        margin-right: 0;
+        width: 99%;
+    }
+    .tv_tv{
+        flex-direction: column;
+        width: 99%;
+        margin-left: 0;
+    }
+    .tv_tv .ststistica{
+        flex-direction: column;
+    }
+    .tv_tv h1{
+        font-size: 25px;
+    }
+    .besonoca .opis{
+        flex-direction: column;
+    }
+    .besonoca .opis .imgas{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .besonoca .opis img{
+        width: 100%;
+    }
+    .besonoca .bes{
+        flex-direction: column;
+    }
+    .besonoca .bes .img{
+        padding-left: 0;
+    }
+    .besonoca .bes .img img{
+        width: 100%;
+    }
+    .besonoca h1{
+        font-size: 40px;
+    }
+    .kosmos h1{
+        margin-left: 0;
+        font-size: 38px;
+    }
+    .kosmos p{
+        margin-left: 0;
+        width: 100%;
+    }
+    .kosmos button{
+        margin-left: 0;
+    }
+    .recomendyem .film{
+        flex-direction: column;
+        align-items: center;
+    }
+    .neznacomec h1{
+        margin-left: 0;
+        font-size: 40px;
+    }
+    .neznacomec .ocenka{
+        margin-left: 0;
+    }
+    .neznacomec .sofi{
+        margin-left: 0;
+        width: 100%;
+    }
+    .neznacomec .knopki{
+        margin-left: 0;
+    }
+    .logo{
+        flex-direction: column;
+    }
+    .livetv a{
+        font-size: 14px !important;
+        padding-left: 10px;
+    }
+}
+
+
+@media  (max-width: 320px){
+    .container{
+        width: 98% !important;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .podpiska .forma{
+        flex-direction: column;
+    }
+    .podpiska .text{
+        width: 100%;
+    }
+    .podpiska .mesac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .tv_tv img{
+        margin-right: 0;
+        width: 99%;
+    }
+    .tv_tv{
+        flex-direction: column;
+        width: 99%;
+        margin-left: 0;
+    }
+    .tv_tv .ststistica{
+        flex-direction: column;
+    }
+    .tv_tv h1{
+        font-size: 25px;
+    }
+    .besonoca .opis{
+        flex-direction: column;
+    }
+    .besonoca .opis .imgas{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .besonoca .opis img{
+        width: 100%;
+    }
+    .besonoca .bes{
+        flex-direction: column;
+    }
+    .besonoca .bes .img{
+        padding-left: 0;
+    }
+    .besonoca .bes .img img{
+        width: 100%;
+    }
+    .besonoca h1{
+        font-size: 40px;
+    }
+    .kosmos h1{
+        margin-left: 0;
+        font-size: 38px;
+    }
+    .kosmos p{
+        margin-left: 0;
+        width: 100%;
+    }
+    .kosmos button{
+        margin-left: 0;
+    }
+    .recomendyem .film{
+        flex-direction: column;
+        align-items: center;
+    }
+    .neznacomec h1{
+        margin-left: 0;
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    .neznacomec .ocenka{
+        margin-left: 0;
+    }
+    .neznacomec .sofi{
+        margin-left: 0;
+        width: 100%;
+    }
+    .neznacomec .knopki{
+        margin-left: 0;
+    }
+    .logo{
+        flex-direction: column;
+    }
+    .livetv a{
+        font-size: 10px !important;
+        padding-left: 10px;
+    }
+    .account img{
+        padding-left: 10px;
+    }
+    .account a{
+        padding-left: 10px;
+        font-size: 12px;
+    }
+}
